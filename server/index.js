@@ -50,7 +50,7 @@ app.post("/api/send", async (req, res) => {
 
 // mongodb connection
 mongoose
-    .connect('mongodb+srv://arechagafacundoet36:uMjQ5CWmn7aWHovf@cluster0.3n2nntq.mongodb.net/portfolio?retryWrites=true&w=majority')
+    .connect(process.env.MONGODB_URI)
     .then(()=>{
     console.log("Connected to MongoDB Atlas")
     })
