@@ -24,6 +24,7 @@ app.use(express.urlencoded({extended:true}))
 app.use('/public', express.static('./public'))
 app.use("/", projects)
 
+
 app.post("/api/send", async (req, res) => {
     try {
       const { from, to, subject, html } = req.body; 
@@ -49,7 +50,7 @@ app.post("/api/send", async (req, res) => {
 
 // mongodb connection
 mongoose
-    .connect(process.env.MONGODB_URI)
+    .connect('mongodb+srv://arechagafacundoet36:uMjQ5CWmn7aWHovf@cluster0.3n2nntq.mongodb.net/portfolio?retryWrites=true&w=majority')
     .then(()=>{
     console.log("Connected to MongoDB Atlas")
     })
