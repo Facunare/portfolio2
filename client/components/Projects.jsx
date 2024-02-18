@@ -74,7 +74,7 @@ const Projects = () => {
         
         <article>
             <a href="https://github.com/Facunare/"  target="_blank">
-              <img className="projectImage" alt="Facundo Arechaga - GitHub" src="../public/assets/github.png"/>
+              <img className="projectImage" alt="Facundo Arechaga - GitHub" src="/assets/github.png"/>
               <div className="work-overlay">
                 <h3>GitHub</h3>
                 <p>{language == "en" ? "Access my GitHub to see all my other projects and contact me." : "Accede a mi GitHub para ver todos mis otros proyectos y contactarme." }</p>

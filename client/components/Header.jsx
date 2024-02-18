@@ -69,7 +69,7 @@ const Header = () => {
               {!darkMode ? (<i className='bx bxs-moon'></i>) : (<i className='bx bxs-sun' ></i>)} 
         </li>
         <li className="languageNav" onClick={handleLanguageChange}>    
-              {language == "en" ? ( <img src="../public/assets/us.svg" alt=""  />) : (<img src="../public/assets/ar.svg" alt="" />)} 
+              {language == "en" ? ( <img src="/assets/us.svg" alt=""  />) : (<img src="/assets/ar.svg" alt="" />)} 
         </li>
       </ul>
       
