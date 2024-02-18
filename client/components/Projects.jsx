@@ -6,7 +6,6 @@ import { useLanguage } from "../context/LanguageContext";
 const Projects = () => {
   const { language, changeLanguage } = useLanguage();
   const [data, fetchData] = useFetch([]);
-  
   const [showMore, setShowMore] = useState(false);
   useEffect(() => {
     allProjects();
@@ -14,8 +13,8 @@ const Projects = () => {
 
 
   const allProjects = () => {
-    fetchData('http://localhost:3000/projects/');
-    // fetchData('facundoarechaga1.vercel.app/projects/');
+    // fetchData('http://localhost:3000/projects/');
+    fetchData('facundoarechaga1.vercel.app/projects/');
   };
 
   const handleShowMore = () => {
