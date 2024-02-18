@@ -80,7 +80,7 @@ const Portfolio = ({image}) => {
               </div>
               <div>
 
-                <a href='#container2' className='aboutMe_a'><span className='aboutMeButton'>{language == "en" ? "CONTACT ME" : "CONTACTAME" }</span></a>
+                <a href='#contact_container' className='aboutMe_a'><span className='aboutMeButton'>{language == "en" ? "CONTACT ME" : "CONTACTAME" }</span></a>
                 <button id="downloadButton" onClick={handleClick}><span className='viewCvButton'>{language == "en" ? "DOWNLOAD CV" : "DESCARGAR CV" }</span></button>
               </div>
             </div>
