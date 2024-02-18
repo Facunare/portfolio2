@@ -14,7 +14,7 @@ const Projects = () => {
 
   const allProjects = () => {
     // fetchData('http://localhost:3000/projects/');
-    fetchData('facundoarechaga1.vercel.app/projects/');
+    fetchData('https://facundoarechaga1.vercel.app/projects/');
   };
 
   const handleShowMore = () => {
