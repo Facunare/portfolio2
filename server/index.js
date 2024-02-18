@@ -11,7 +11,7 @@ const app = express()
 app.use(morgan("tiny"))
 app.use(cors(
   {
-      origin: ["https://facunare-portfolio.vercel.app/"],
+      origin: ["https://facunare-portfolio.vercel.app"],
       methods: ["POST", "GET"],
       credentials: true
   }
@@ -24,7 +24,9 @@ app.use(express.urlencoded({extended:true}))
 app.use('/public', express.static('./public'))
 app.use("/", projects)
 
-
+app.get("/", (req, res) => {
+  res.json("Hello");
+})
 app.post("/api/send", async (req, res) => {
     try {
       const { from, to, subject, html } = req.body; 
