@@ -68,20 +68,21 @@ const Portfolio = ({image}) => {
       <div className="container" id='container'>
         <Header/>
         <div className="content" id={`${!darkMode ? "" : "header_image"}`}>
-          <img className='fotoChica' src={fotoChica} alt="Facundo Arechaga" />
-         
-          <div>
-            <div>  
-
-                <h2 className="greetings">{language == "en" ? "Hi! My name is" : "¡Hola! Mi nombre es" }</h2>
-                <h1 className='name'>Facundo Arechaga</h1>
-              
-              <p className='typed' >{language == "en" ? "I'm " : "Soy " }<span  className='typed' ref={el} /></p>
-            </div>
+          <div className="fotoyDesc">
+            <img className='fotoChica' src={fotoChica} alt="Facundo Arechaga" />
             <div>
+              <div>  
 
-              <a href='#container2' className='aboutMe_a'><span className='aboutMeButton'>{language == "en" ? "ABOUT ME" : "SOBRE MI" }</span></a>
-              <button id="downloadButton" onClick={handleClick}><span className='viewCvButton'>{language == "en" ? "DOWNLOAD CV" : "DESCARGAR CV" }</span></button>
+                  <h2 className="greetings">{language == "en" ? "Hi! My name is" : "¡Hola! Mi nombre es" }</h2>
+                  <h1 className='name'>Facundo Arechaga</h1>
+                
+                <p className='typed' >{language == "en" ? "I'm " : "Soy " }<span  className='typed' ref={el} /></p>
+              </div>
+              <div>
+
+                <a href='#container2' className='aboutMe_a'><span className='aboutMeButton'>{language == "en" ? "ABOUT ME" : "SOBRE MI" }</span></a>
+                <button id="downloadButton" onClick={handleClick}><span className='viewCvButton'>{language == "en" ? "DOWNLOAD CV" : "DESCARGAR CV" }</span></button>
+              </div>
             </div>
           </div>
           <div className="media_header">
@@ -90,9 +91,8 @@ const Portfolio = ({image}) => {
             <a href="https://www.instagram.com/facu.arechaga_/" target="_blank" > <i className='bx bxl-instagram'></i></a>
             <a href="https://www.youtube.com/channel/UCcCoUe7ajmU6CpiLkm54ccA" target="_blank"><i className='bx bxl-youtube' ></i></a>
           </div>
-          
-          
         </div>
+
         <div className='yoDiv'>
           <div className="vineta">
 
