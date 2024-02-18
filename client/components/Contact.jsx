@@ -52,7 +52,7 @@ const Contact = () => {
         setSuccess(null);
       }, 3000)
     } else {
-        await fetch('facundoarechaga1.vercel.app/api/send', {
+        await fetch('https://facundoarechaga1.vercel.app/api/send', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
