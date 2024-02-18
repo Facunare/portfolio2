@@ -1,0 +1,152 @@
+[
+    {
+      "id": "1",
+      "url": "WhatsApp Image 2024-01-29 at 3.25.55 PM (1).jpeg",
+      "category": "SFT",
+      "type": "image"
+    },
+    {
+      "id": "2",
+      "url": "certificadoAP.png",
+      "category": "AP",
+      "type": "image"
+    },
+    {
+        "id": "3",
+        "url": "WhatsApp Image 2024-01-29 at 3.25.55 PM.jpeg",
+        "category": "SFT",
+        "type": "image"
+    },
+    {
+        "id": "4",
+        "url": "certificadoUDLC.png",
+        "category": "UDLC",
+        "type": "image"
+    },
+    {
+        "id": "5",
+        "url": "WhatsApp Video 2024-01-29 at 3.01.49 PM.mp4",
+        "category": "SFT",
+        "type": "video"
+    },
+    {
+      "id": "6",
+      "url": "certificadoGT.png",
+      "category": "GT",
+      "type": "image"
+  },
+  {
+    "id": "7",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.54 PM.jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "8",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.54 PM (3).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "9",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.54 PM (2).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "10",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.54 PM (1).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "11",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.53 PM.jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "12",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.53 PM (3).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "13",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.53 PM (2).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "14",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.53 PM (1).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "15",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.52 PM.jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "15",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.52 PM (3).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "15",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.52 PM (2).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "15",
+    "url": "WhatsApp Image 2024-01-29 at 3.25.52 PM (1).jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "16",
+    "url": "WhatsApp Video 2024-01-29 at 3.34.47 PM.mp4",
+    "category": "SFT",
+    "type": "video"
+  },
+  {
+    "id": "17",
+    "url": "CBC.png",
+    "category": "CBC",
+    "type": "image"
+  },
+  {
+    "id": "18",
+    "url": "CBC2.png",
+    "category": "CBC",
+    "type": "image"
+  },
+  {
+    "id": "19",
+    "url": "diplomaET36.jpeg",
+    "category": "ET36",
+    "type": "image"
+  },
+  {
+    "id": "20",
+    "url": "dorsoSFT.jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "21",
+    "url": "frenteSFT.jpeg",
+    "category": "SFT",
+    "type": "image"
+  },
+  {
+    "id": "22",
+    "url": "excelencia.jpeg",
+    "category": "ET36",
+    "type": "image"
+  }
+]
