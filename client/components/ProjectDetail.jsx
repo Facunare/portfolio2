@@ -53,7 +53,7 @@ const ProjectDetail = () => {
         </div>
         <div className="images">
             {project.images && project.images.map((foto, index) => (
-              <img key={index} src={`../public/assets/projectImages/${project.title}/${foto}.png`} alt={`Facundo Arechaga - ${project.title} - Image`} />
+              <img key={index} src={`/assets/projectImages/${project.title}/${foto}.png`} alt={`Facundo Arechaga - ${project.title} - Image`} />
             ))}
             
         </div>
