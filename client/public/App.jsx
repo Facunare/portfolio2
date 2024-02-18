@@ -20,4 +20,9 @@ function App() {
 export default App
 
 
-// hostear
+// arreglar twitke, ñetflix
+// rever whiteMode
+// rever viñeta
+// rendimiento
+// redireccion mobile
+// modales imagenes detail
