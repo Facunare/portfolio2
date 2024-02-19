@@ -24,5 +24,3 @@ export default App
 // rever whiteMode
 // rever viñeta
 // rendimiento
-// redireccion mobile
-// modales imagenes detail

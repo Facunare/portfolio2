@@ -1,14 +1,1 @@
-.container2,.container2 div:nth-child(2){display:flex;gap:50px}.container2{height:110vh;background-color:var(--color_oscuro);color:#fff;align-items:center;flex-direction:column;justify-content:center;width:100%}.container2 div:first-child{display:flex;justify-content:center;flex-direction:column;align-items:center}.container2 div:nth-child(2) div{margin:50px;border:3px solid var(--color_claro);padding:20px 20px 20px 10px}.container2 div:nth-child(2) span{font-size:var(--text-xl)}.container2 p{width:50%;font-size:var(--text-sm);text-wrap:pretty}.container2 p a{text-decoration:none;color:#f1c235}.boxes,.boxes h3{font-size:var(--text-xs)}.container2 p a:hover{text-decoration:underline}.container2 h2{margin:50px;font-size:var(--text-3xl);font-weight:bolder;color:#fff}.container2 .me,.container2 span{color:var(--color_texto);font-weight:bolder}.container2 span{font-style:italic}.container2 .me{font-style:normal}@media screen and (max-width:1200px){.boxes{width:25vw;margin:10px!important}}@media screen and (min-width:1700px){.container2 p{width:30%}}
-
-@media screen  and (max-width: 500px){  
-    .boxes_div{
-        margin-bottom: 50px;
-        
-    }
-
-    .boxes{
-        padding:20px 20px 20px 10px !important;
-    }
-
-
-}
+.container2,.container2 div:nth-child(2){display:flex;gap:50px}.container2{height:110vh;background-color:var(--color_oscuro);color:#fff;align-items:center;flex-direction:column;justify-content:center;width:100%}.container2 div:first-child{display:flex;justify-content:center;flex-direction:column;align-items:center}.container2 div:nth-child(2) div{margin:50px;border:3px solid var(--color_claro);padding:20px 20px 20px 10px}.container2 div:nth-child(2) span{font-size:var(--text-xl)}.container2 p{width:50%;font-size:var(--text-sm);text-wrap:pretty}.container2 p a{text-decoration:none;color:#f1c235}.boxes,.boxes h3{font-size:var(--text-xs)}.container2 p a:hover{text-decoration:underline}.container2 h2{margin:50px;font-size:var(--text-3xl);font-weight:bolder;color:#fff}.container2 .me,.container2 span{color:var(--color_texto);font-weight:bolder}.container2 span{font-style:italic}.container2 .me{font-style:normal}@media screen and (max-width:1200px){.boxes{width:25vw;margin:10px!important}}@media screen and (min-width:1700px){.container2 p{width:30%}}@media screen and (max-width:500px){.boxes_div{margin-bottom:50px}.boxes{padding:20px 20px 20px 10px!important}}

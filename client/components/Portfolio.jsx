@@ -32,7 +32,7 @@ const Portfolio = ({image}) => {
               behavior: 'smooth'
           });
       }
-  };
+    };
   
     const el = React.useRef(null);
     let texto = []

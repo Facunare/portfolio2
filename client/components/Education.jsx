@@ -36,14 +36,9 @@ const Education = () => {
     })
 
     useEffect(() => {
-      allImages();
+        fetchData('/gallery.json');
     }, []);
   
-    useEffect(() => {
-      setImages(data);
-    }, [data]);
-  
-    const allImages = () => fetchData('/gallery.json');
   
     const handleButtonImages = (id) => {
       const filteredImages = data.filter(image => image.category === id);
@@ -132,7 +127,7 @@ const Education = () => {
             <div className="gallery">
                 {images.length > 0 ? (
                     images.map((foto, index) => (
-                        <div key={index} className="gallery_div"> {/* Adding key here */}
+                        <div key={index} className="gallery_div">
                             {foto.type === "image" ? (
                                 <img src={`/assets/gallery/${foto.url}`} alt={`Facundo Arechaga - Image - ${foto.category === "SFT" ? "Samsung Solve For Tomorrow - CitySensor" : ""}`} className="foto" />
                             ) : (
@@ -149,7 +144,7 @@ const Education = () => {
                         </div>
                     ))
                 ) : (
-                    <p>{language === "en" ? "No images available" : "No hay imágenes disponibles"}</p>
+                    <p>{language === "en" ? "Click on the timeline to see images" : "Tocá en la linea del tiempo para ver las imagenes"}</p>
                 )}
             </div>
 

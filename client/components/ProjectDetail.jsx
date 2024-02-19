@@ -15,7 +15,7 @@ const ProjectDetail = () => {
   const { darkMode, changeMode } = useDarkMode()
   
   useEffect(()=>{
-        fetch(`https://facundoarechaga1.vercel.app/projects/${id}`)
+        fetch(`https://facundoarechaga1.vercel.app/${id}`)
         .then(res => res.json())
         .then(data =>{
             console.log(data)
@@ -23,6 +23,33 @@ const ProjectDetail = () => {
         })
     }, [id])
 
+    useEffect(()=>{
+      const fotos = document.querySelectorAll('.foto')
+      const modalFoto = document.querySelector('.modalFoto')
+      const modalFotoFoto = document.querySelector('.modalFoto img')
+      const cerrarModales = document.querySelectorAll('.modal_close')
+    
+  
+      fotos.forEach(foto=>{
+      
+          foto.addEventListener('click', (e)=>{
+              e.preventDefault()  
+              modalFotoFoto.src = foto.src
+              modalFoto.classList.add('modal--show')
+              console.log("hola")
+          })
+      })
+      
+      for(let cerrarModal of cerrarModales){
+      
+          cerrarModal.addEventListener('click', (e)=>{
+              e.preventDefault()
+              modalFoto.classList.remove('modal--show');
+          })
+      }
+  })
+
+    
   return (
     <div className={`details ${!darkMode ? "dark" : "whiteDetail"}`}>
       <Header/>
@@ -53,12 +80,21 @@ const ProjectDetail = () => {
         </div>
         <div className="images">
             {project.images && project.images.map((foto, index) => (
-              <img key={index} src={`/assets/projectImages/${project.title}/${foto}.png`} alt={`Facundo Arechaga - ${project.title} - Image`} />
+              <div>
+                <img key={index} src={`/assets/projectImages/${project.title}/${foto}.png`} alt={`Facundo Arechaga - ${project.title} - Image`} className="foto" />
+                <section className="modal modalFoto">
+                    <div className="modal_container_foto">
+                        <button href="#" className="modal_close"><i className='bx bx-x'></i></button>
+                        <img src="" alt={`Facundo Arechaga - ${project.title} - Image`} />
+                    </div>
+                </section>
+              </div>
+              
             ))}
             
         </div>
       </div>
-      
+    
     </div>
   );
 };
