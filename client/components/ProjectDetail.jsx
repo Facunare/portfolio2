@@ -15,7 +15,7 @@ const ProjectDetail = () => {
   const { darkMode, changeMode } = useDarkMode()
   
   useEffect(()=>{
-        fetch(`https://facundoarechaga1.vercel.app/${id}`)
+        fetch(`https://facundoarechaga1.vercel.app/projects/${id}`)
         .then(res => res.json())
         .then(data =>{
             console.log(data)
