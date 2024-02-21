@@ -20,7 +20,7 @@ const Technologies = () => {
           <Skills image="assets/django-logo.png"name="Django" color="rgb(38,170,120)"/>
           <Skills image="assets/java.png" name="Java" color="rgb(191,44,54)"/>
           <Skills image="/assets/pngwing.com (5).png"name="NodeJS" color="rgb(140,200,75)"/>
-          <Skills image="/assets/arduino-logo-1.png" name="Arduino" color="#0f979c"/>
+          <Skills image="/assets/arduino-logo-1.webp" name="Arduino" color="#0f979c"/>
         </div>
         <h3>   {language == "en" ? "Databases:" : "Bases de datos:" } </h3>
         <div className="skills">

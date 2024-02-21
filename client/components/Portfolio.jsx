@@ -8,8 +8,8 @@ import Projects from '../components/Projects'
 import Technologies from '../components/Technologies'
 import Contact from '../components/Contact'
 import Education from '../components/Education'
-import fotoGrande from '/assets/Samsung_Adelanto-35-PhotoRoom.png-PhotoRoom-W-1R6aMnb-transformed.png'
-import fotoChica from '/assets/WhatsApp Image 2023-12-22 at 10.58.03 PM (3).jpeg'
+import fotoGrande from '/assets/Samsung_Adelanto-35-PhotoRoom.png-PhotoRoom-W-1R6aMnb-transformed.webp'
+import fotoChica from '/assets/WhatsApp Image 2023-12-22 at 10.58.03 PM (3).webp'
 import pdf from '/assets/CV - Facundo Arechaga (13).pdf'
 import { useLanguage } from '../context/LanguageContext';
 import { useDarkMode } from "../context/DarkModeContext";
