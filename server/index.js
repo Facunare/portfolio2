@@ -9,13 +9,14 @@ require("dotenv").config()
 
 const app = express()
 app.use(morgan("tiny"))
-app.use(cors(
-  {
-      origin: ["https://facundoarechaga.vercel.app"],
-      methods: ["POST", "GET"],
-      credentials: true
-  }
-));
+// app.use(cors(
+//   {
+//       origin: ["http://localhost:5173/"],
+//       methods: ["POST", "GET"],
+//       credentials: false
+//   }
+// ));
+app.use(cors());
 const port = process.env.PORT || 3000
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
