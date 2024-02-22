@@ -21,4 +21,3 @@ export default App
 
 
 // arreglar twitke, ñetflix
-// rendimiento
