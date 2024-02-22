@@ -10,17 +10,28 @@ const Technologies = () => {
         { language == "en" ? (<h2><span className='me'>TECH</span>NOLOGIES</h2>) : (<h2><span className='me'>TECNO</span>LOGÍAS</h2>)}
         <h3>Front-end:</h3>
         <div className="skills">
-          <Skills image="assets/html-icon.webp"name="HTML" color="rgb(228,77,38)"/>
-          <Skills image="assets/css.png" name="CSS" color="#2465f1"/>
-          <Skills image="assets/react-logo-A60AB5e1_brandlogos.net.svg"name="ReactJS" color="rgb(97,218,251)"/>
-          <Skills image="assets/js.png"name="JavaScript" color="rgb(240,220,78)"/>
+          <div className="skillsDuo">
+            <Skills image="assets/html-icon.webp"name="HTML" color="rgb(228,77,38)"/>
+            <Skills image="assets/css.png" name="CSS" color="#2465f1"/>
+
+          </div>
+          <div className="skillsDuo">
+            <Skills image="assets/react-logo-A60AB5e1_brandlogos.net.svg"name="ReactJS" color="rgb(97,218,251)"/>
+            <Skills image="assets/js.png"name="JavaScript" color="rgb(240,220,78)"/>
+          </div>
         </div>
         <h3>Back-end: </h3>
         <div className="skills">
-          <Skills image="assets/django-logo.png"name="Django" color="rgb(38,170,120)"/>
-          <Skills image="assets/java.png" name="Java" color="rgb(191,44,54)"/>
-          <Skills image="/assets/pngwing.com (5).png"name="NodeJS" color="rgb(140,200,75)"/>
-          <Skills image="/assets/arduino-logo-1.webp" name="Arduino" color="#0f979c"/>
+          <div className="skillsDuo">
+
+            <Skills image="assets/django-logo.png"name="Django" color="rgb(38,170,120)"/>
+            <Skills image="assets/java.png" name="Java" color="rgb(191,44,54)"/>
+          </div>
+          <div className="skillsDuo">
+
+            <Skills image="/assets/pngwing.com (5).png"name="NodeJS" color="rgb(140,200,75)"/>
+            <Skills image="/assets/arduino-logo-1.webp" name="Arduino" color="#0f979c"/>
+          </div>
         </div>
         <h3>   {language == "en" ? "Databases:" : "Bases de datos:" } </h3>
         <div className="skills">

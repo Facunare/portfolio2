@@ -21,6 +21,4 @@ export default App
 
 
 // arreglar twitke, ñetflix
-// rever whiteMode
-// rever viñeta
 // rendimiento
