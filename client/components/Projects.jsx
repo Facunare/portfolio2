@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Styles/projectsStyle.css";
 import useFetch from '../custom_hooks/useFetch'
 import { useLanguage } from "../context/LanguageContext";
-
+import Project from "../components/Project";
 const Projects = () => {
   const { language, changeLanguage } = useLanguage();
   const [data, fetchData] = useFetch([]);
@@ -13,8 +13,8 @@ const Projects = () => {
 
 
   const allProjects = () => {
-    fetchData('http://localhost:3000/projects/');
-    // fetchData('https://facundoarechaga1.vercel.app/projects/');
+    // fetchData('http://localhost:3000/projects/');
+    fetchData('https://facundoarechaga1.vercel.app/projects/');
   };
 
   const handleShowMore = () => {
@@ -31,45 +31,10 @@ const Projects = () => {
       <h2>{language == "en" ? "PROJECTS" : "PROYECTOS" }</h2>
       <div className="projects">
         {data && data.slice(0,4).map((project) => (
-          <article key={project._id}>
-            <a className="link_principal" href={`project/${project._id}`}>
-              <img className="projectImage" src={"/assets/"+project.thumbnail} alt={`Facundo Arechaga - Project - ${project.title}`} />
-              <div className="work-overlay">
-                <h3>{project.title}</h3>
-                {language == "en" ? (<p>{project.description.en}</p>) : (<p>{project.description.es}</p>)}
-                <ul>
-                  {project.technologies.map((skill, index)=> (
-                    <li key={index}>{skill}</li>
-                  ))}
-                </ul>
-                <div className="links">
-                  {project.github && <a  className="github" href={project.github} target="_blank"><i className='bx bxl-github'></i></a>}
-                  {project.link && <a className="link" href={"http://"+project.link} target="_blank"><i className='bx bx-link-alt'></i></a>}
-                </div>
-              </div>
-            </a>
-          </article>
+          <Project project={project} language={language}/>
         ))}
         {showMore && data.slice(4).map((project)=> (
-          <article key={project._id}>
-            <a className="link_principal" href={`project/${project._id}`}>
-            <img className="projectImage" src={"/assets/"+project.thumbnail} alt={`Facundo Arechaga - Project - ${project.title}`} />
-            <div className="work-overlay">
-              <h3>{project.title}</h3>
-              {language == "en" ? (<p>{project.description.en}</p>) : (<p>{project.description.es}</p>)}
-              <ul>
-                {project.technologies.map((skill, index)=> (
-                  <li key={index}>{skill}</li>
-                ))}
-              </ul>
-              <div className="links">
-
-                {project.link && <a className="link" href={"http://"+project.link} target="_blank"><i className='bx bx-link-alt'></i></a>}
-                {project.github && <a  className="github" href={project.github} target="_blank"><i className='bx bxl-github'></i></a>}
-              </div>
-            </div>
-          </a>
-        </article>
+          <Project project={project} language={language}/>
         ))}
         
         <article>
