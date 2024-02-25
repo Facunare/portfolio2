@@ -15,10 +15,11 @@
     --color_principal:rgb(89, 60, 168);
     --color_header:rgba(45, 23, 105, 0.233);
     --color_nav:#8a2be2;
-    --color_texto:rgb(175, 148, 252);
+    --color_texto:rgb(139, 104, 236);
     --color_oscuro:rgb(45, 23, 105);
-    --color_claro:rgb(116, 84, 206);
+    --color_claro:rgb(72, 31, 184);
     --color_secundario:rgba(45, 23, 105, 0.438);
+
     --text-xs:clamp(.8rem, 1.25vw, .9rem);
     --text-sm:clamp(1rem, 1.5vw, 1.1rem);
     --text-base:clamp(1.2rem, 1.75vw, 1.6rem);
@@ -110,6 +111,11 @@
     margin-left:20px;
     background-color:var(--color_claro)
 }
+
+.content .aboutMe_a{
+    background-color: var(--color_nav);
+}
+
 .yoDiv {
     width:550px;
     right:0;
@@ -238,4 +244,30 @@
 
 .content .name {
     color: white;
+}
+
+.back{
+    background: linear-gradient(90deg, rgba(255,0,182,.15), rgba(255,255,255,0)); 
+}
+
+.back::before,
+.back::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: -10%; /* Adjust as needed */
+    width: 500px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-side, rgba(255,0,182,.15), rgba(255,255,255,0));
+}
+
+.back::before {
+    left: -20%; /* Adjust as needed */
+    right: 0;
+}
+
+.back::after {
+    right: -20%; /* Adjust as needed */
+    left: 0;
 }
