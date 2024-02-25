@@ -36,15 +36,18 @@ const ProjectDetail = () => {
           <div className="techstack">
             <hr />
             <h2>{language == "en" ? "Tech Stack" : "Tecnologías" }</h2>
-            <ul className="tech">
-              {project.technologies?.map((skill)=> (
-                <li key={skill.id}>{skill}</li>
-              ))}
-            </ul>
-            <div className="linksProjectDetail">
+            <div className="techLinks">
 
-              {project.link && <a className="linkDetail" href={"http://"+project.link} target="_blank"><i className='bx bx-link-alt'></i></a>}
-              {project.github && <a  className="githubDetail" href={project.github} target="_blank"><i className='bx bxl-github'></i></a>}
+              <ul className="tech">
+                {project.technologies?.map((skill)=> (
+                  <li key={skill.id}>{skill}</li>
+                ))}
+              </ul>
+              <div className="linksProjectDetail">
+
+                {project.link && <a className="linkDetail" href={"http://"+project.link} target="_blank"><i className='bx bx-link-alt'></i></a>}
+                {project.github && <a  className="githubDetail" href={project.github} target="_blank"><i className='bx bxl-github'></i></a>}
+              </div>
             </div>
             {project.moreContent ? <details>
               <summary>{language == "en" ? "More Info" : "Más información" }</summary>           

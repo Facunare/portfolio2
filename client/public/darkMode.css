@@ -2,3 +2,7 @@
 .white .content .name{
     color: var(--color_oscuro);
 }
+
+.white #name, .white #email, .white #message{
+    background-color: #ffffff77;
+}
