@@ -11,7 +11,7 @@ const app = express()
 app.use(morgan("tiny"))
 app.use(cors(
   {
-      origin: ["https://facundoarechaga.vercel.app/"],
+      origin: ["https://facundoarechaga.vercel.app"],
       methods: ["POST", "GET"],
       credentials: true
   }
