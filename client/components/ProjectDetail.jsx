@@ -50,7 +50,7 @@ const ProjectDetail = () => {
               </div>
             </div>
             {project.moreContent ? <details>
-              <summary>{language == "en" ? "More Info" : "Más información" }</summary>           
+              <summary className="moreInfoDetail">{language == "en" ? "More Info" : "Más información" }</summary>           
               <p>{language == "en" ? project.moreContent?.en : project.moreContent?.es }</p>
             </details>: ""}
           </div>
