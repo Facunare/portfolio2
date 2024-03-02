@@ -40,10 +40,6 @@ article:nth-child(3),article:nth-child(8),article:nth-child(9) {
     grid-column-end:span 6;
     grid-row-end:span 3
 }
-article:nth-child(10){
-    grid-column-end:span 6;
-    grid-row-end:span 5
-}
 
 .projectImage {
     display:block;
