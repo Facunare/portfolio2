@@ -33,7 +33,7 @@ const Projects = () => {
         {data && data.slice(0,4).map((project) => (
           <Project project={project} language={language}/>
         ))}
-        {showMore && data.slice(5).map((project)=> (
+        {showMore && data.slice(4).map((project)=> (
           <Project project={project} language={language}/>
         ))}
         
