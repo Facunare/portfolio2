@@ -42,7 +42,7 @@ article:nth-child(3),article:nth-child(8),article:nth-child(9) {
 }
 article:nth-child(10){
     grid-column-end:span 8;
-    grid-row-end:span 3
+    grid-row-end:span 7
 }
 
 .projectImage {
