@@ -6,3 +6,7 @@
 .white #name, .white #email, .white #message{
     background-color: #ffffff77;
 }
+
+.white .aboutMe_a:hover{
+    background-color: #d64357;
+}
