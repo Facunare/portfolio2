@@ -126,7 +126,8 @@
 .yo {
     transform:rotateY(3rad);
     filter:brightness(1.3);
-    transition:filter .3s
+    transition:filter .3s;
+    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
 }
 .yo:hover {
     filter:brightness(1.1) contrast(1.1) brightness(1.3) drop-shadow(5px 5px 10px var(--color_oscuro))
