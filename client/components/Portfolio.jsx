@@ -93,7 +93,7 @@ const Portfolio = ({image}) => {
           </div>
         </div>
 
-        <div className='yoDiv'>
+        {/* <div className='yoDiv'>
           <div className="vineta">
 
             <p className="globo iv yellow">
@@ -102,7 +102,7 @@ const Portfolio = ({image}) => {
             </p> 
           </div>
           <img className='yo' src={fotoGrande} alt="Facundo Arechaga" />
-        </div>
+        </div> */}
       </div>
       <AboutMe/>
       <Technologies/>
